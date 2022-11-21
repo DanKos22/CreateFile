@@ -14,7 +14,7 @@ public class CreateFile {
             {
                 FileWriter fw = new FileWriter("MyFile.txt",true);
                 PrintWriter pw = new PrintWriter(fw);
-                pw.println("Fourth Line: " + new java.util.Date());
+                pw.println("Fifth Line: ");
                 pw.close();
             }
             catch(IOException e)
