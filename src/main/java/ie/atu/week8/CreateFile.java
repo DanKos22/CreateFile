@@ -11,8 +11,8 @@ public class CreateFile {
             System.out.println("My file is located at: " + myFile.getAbsolutePath());
             try
             {
-                FileWriter fw = new FileWriter("MyFile.txt");
-                fw.write("New Data");
+                FileWriter fw = new FileWriter("MyFile.txt",true);
+                fw.write("Old data");
                 fw.close();
             }
             catch(IOException e)
