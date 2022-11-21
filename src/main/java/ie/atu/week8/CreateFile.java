@@ -3,6 +3,7 @@ package ie.atu.week8;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 public class CreateFile {
     public static void main(String[] args) {
@@ -12,8 +13,9 @@ public class CreateFile {
             try
             {
                 FileWriter fw = new FileWriter("MyFile.txt",true);
-                fw.write("Old data");
-                fw.close();
+                PrintWriter pw = new PrintWriter(fw);
+                pw.println("Fourth Line: " + new java.util.Date());
+                pw.close();
             }
             catch(IOException e)
             {
